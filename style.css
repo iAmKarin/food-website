@@ -237,4 +237,65 @@ h1 {
 }
 /* end of gallery - section 3 */
 /* footer - section 4 */
+.footer {
+  height: 30vh;
+  background-color: var(--fuzzy-wuzzy);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 3rem 0;
+  position: relative;
+}
+.footer__text {
+  text-transform: uppercase;
+}
+.footer__heading {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--charcoal);
+}
+.footer__paragraph {
+  font-size: 1.5rem;
+  color: var(--charcoal);
+}
+.footer__sign-up {
+  display: flex;
+  align-items: center;
+}
+.footer__email {
+  width: 35rem;
+  height: 5rem;
+  padding: 1rem;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: var(--charcoal);
+}
+.footer__email::placeholder {
+  color: var(--charcoal);
+}
+.footer__btn {
+  position: relative;
+  left: -4.5rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--fuzzy-wuzzy);
+  color: var(--silver);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.copyright {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: var(--charcoal);
+  letter-spacing: 0.1rem;
+  border-top: 0.1rem solid var(--charcoal);
+  padding-top: 5rem;
+  width: 90%;
+  text-align: center;
+}
 /* end of footer - section 4 */
