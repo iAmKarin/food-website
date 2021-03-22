@@ -28,6 +28,16 @@ html {
   font-weight: 400;
   font-size: 62.5%;
 }
+@media (max-width: 1400px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 5500px) {
+  html {
+    font-size: 40%;
+  }
+}
 h1 {
   font-size: 9rem;
   font-weight: 900;
@@ -37,7 +47,17 @@ h1 {
   letter-spacing: 0.5rem;
   text-shadow: 0.3rem 0.3rem 0.3rem var(--charcoal);
 }
-
+@media (max-width: 1000px) {
+  h1 {
+    padding: 0 4rem;
+  }
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 7rem;
+    padding: 0 2rem;
+  }
+}
 /* navigation */
 .navbar {
   height: 14rem;
@@ -67,6 +87,16 @@ h1 {
   opacity: 0;
   transition: color 0.3s, opacity 0.2s;
 }
+@media (max-width: 900px) {
+  .navbar__link {
+    margin: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .navbar__link {
+    margin: 1rem;
+  }
+}
 .change .navbar__link {
   opacity: 1;
 }
@@ -92,10 +122,20 @@ h1 {
 .navbar__link i {
   font-size: 7rem;
 }
+@media (max-width: 900px) {
+  .navbar__link i {
+    font-size: 4rem;
+  }
+}
 .navbar__link span {
   font-size: 2.5rem;
   font-weight: 900;
   letter-spacing: 0.5rem;
+}
+@media (max-width: 900px) {
+  .navbar__link span {
+    font-size: 2rem;
+  }
 }
 .menu {
   width: 4rem;
@@ -110,6 +150,11 @@ h1 {
   cursor: pointer;
   z-index: 90;
   transition: top 0.4s 0.2s;
+}
+@media (max-width: 700px) {
+  .menu {
+    left: 2rem;
+  }
 }
 .menu::before {
   content: "";
@@ -138,30 +183,56 @@ h1 {
 }
 
 .heading__icons i {
-  font-size: 20rem;
+  font-size: 40rem;
   color: var(--silver);
   position: absolute;
   transform: translate(-50%, -50%) scale(0);
   text-shadow: 0.3rem 0.3rem 0.7rem var(--charcoal);
   transition: transform 0.3s;
 }
+@media (max-width: 1000px) {
+  .heading__icons i {
+    font-size: 25rem;
+  }
+}
+@media (max-width: 550px) {
+  .heading__icons i {
+    font-size: 25rem;
+  }
+}
 .heading__icons i.change {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 0.3s 0.3s;
 }
 /* end of header */
+
 /* Menu Cards */
 .cards {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10rem 0;
   background-color: var(--white);
 }
+@media (max-width: 1400px) {
+  .cards {
+    min-height: auto;
+    padding: 10rem;
+  }
+  .cards__container {
+    margin-top: 10rem;
+  }
+}
+
 .cards__container {
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 1000px) {
+  .cards__container {
+    flex-wrap: wrap;
+  }
 }
 .card {
   width: 30rem;
@@ -174,6 +245,11 @@ h1 {
   box-shadow: 1rem 1rem 1rem var(--charcoal);
   position: relative;
   transition: transform 0.3s;
+}
+@media (max-width: 1000px) {
+  .card {
+    margin: 5rem;
+  }
 }
 .card:hover {
   transform: translateY(0.3rem);
@@ -245,6 +321,13 @@ h1 {
   margin: 4rem 1rem;
   position: relative;
 }
+@media (max-width: 1400px) {
+  .gallery__link {
+    width: 42rem;
+    height: 25rem;
+    margin: 4rem;
+  }
+}
 .gallery__link::before {
   content: "";
   position: absolute;
@@ -281,6 +364,12 @@ h1 {
     0.7rem 0.7rem.1rem var(--silver-shade3),
     0.9rem 0.9rem 0.1rem var(--silver-shade4);
   transition: all 0.5s;
+}
+@media (max-width: 1400px) {
+  .food__image {
+    width: 100%;
+    height: 100%;
+  }
 }
 .gallery__link:hover .food__image {
   box-shadow: 1rem 1rem 0.1rem var(--silver-shade1),
@@ -321,6 +410,11 @@ h1 {
   visibility: hidden;
   transition: opacity 0.3s;
 }
+@media (max-width: 1000px) {
+  .food__description {
+    bottom: 7rem;
+  }
+}
 .gallery__link:hover .food__description {
   opacity: 1;
   visibility: visible;
@@ -337,8 +431,26 @@ h1 {
   padding: 3rem 0;
   position: relative;
 }
+@media (max-width: 1000px) {
+  .footer {
+    height: 25rem;
+  }
+}
+@media (max-width: 700px) {
+  .footer {
+    height: 35rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 .footer__text {
   text-transform: uppercase;
+}
+@media (max-width: 700px) {
+  .footer__text {
+    margin-bottom: 5rem;
+  }
 }
 .footer__heading {
   font-size: 4rem;
@@ -390,3 +502,6 @@ h1 {
   text-align: center;
 }
 /* end of footer - section 4 */
+/* Responsive */
+
+/* end of Responsive */
